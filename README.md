@@ -1,7 +1,7 @@
 # Show Tell Image captioning
 # Implementation of 'Show and Tell: A Neural Image Caption Generator' paper by [Vinyals et al.] at https://arxiv.org/abs/1411.4555
 
-Note: This is a work in progress.
+Note: This is a work in progress. I will write a detailed blog post on medium.com explaining all the code and detailing the steps.
 
 Here I am going to implement the popular image captioning approach proposed in the above mentioned paper.
 However this will not be an exact implementation of the paper and differs in these following ways:
