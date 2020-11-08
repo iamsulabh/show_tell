@@ -1,4 +1,4 @@
-# show_tell
+# Show Tell Image captioning
 # Implementation of 'Show and Tell: A Neural Image Caption Generator' paper by [Vinyals et al.] at https://arxiv.org/abs/1411.4555
 
 Note: This is a work in progress.
