@@ -1,9 +1,17 @@
 # Show Tell Image captioning
-# Implementation of 'Show and Tell: A Neural Image Caption Generator' paper by [Vinyals et al.] at https://arxiv.org/abs/1411.4555
+## Implementation of 'Show and Tell: Lessons Learned from the 2015 MSCOCO Image Captioning Challenge' paper by [Vinyals et al.](https://ieeexplore.ieee.org/abstract/document/7505636)
+### This paper was published in IEEE TPAMI with 4000+ citations (including previous conference version).
 
-Note: This is a work in progress. I will write a detailed blog post on medium.com explaining all the code and detailing the steps.
 
-Here I am going to implement the popular image captioning approach proposed in the above mentioned paper.
-However this will not be an exact implementation of the paper and differs in these following ways:
-* The authors use an ensemble of models but we use only one model. The authors have found that using ensembles of models enables them to achieve a performance boost of 2 points with respect to BLEU metrics. However, as we shall see, certain optimizations allow us to acheive better scores on certain metrics than the scores mentioned in the paper. I will explain the optimizations used and the scores that we acheive. 
-* The authors extract a single image feature vector from the penulimate layer of CNN but we extract a set of feature vectors from a lower layer. We have noticed that this allows us to acheive better performance. 
+**Note:** This is a work in progress. I will write a detailed blog post on medium.com explaining all the code and detailing the steps.
+
+This will not be an exact implementation of the paper and differs in these following ways:
+1. The authors use an ensemble of models but we use only one model. The authors have found that using ensembles enables them to achieve a boost of 2 points with respect to BLEU metrics. However, as we shall see, certain optimizations allow us to acheive better scores on certain metrics than the scores mentioned in the paper.
+2. The authors extract a single image feature vector from the penulimate layer of CNN but we extract a set of feature vectors from a lower layer. We have noticed that this allows us to acheive better performance.
+3. We use pre-trained RESNET-152 Convolutional Neural Network instead of Inception used in the paper and it helps to improve results.
+
+In addition we perform some analysis: 
+1. We experiment with image data augmentation and observe that it helps boost performance (depending on which technique used.)
+2. We experiment with pre-trained word embeddings. Some pre-trained word embeddings help in increasing evaluation scores.
+3. We experiment with different CNNs to extract image feature vectors.
+
