@@ -1,6 +1,7 @@
-# Show Tell Image captioning
+# Show Tell Image captioning and Analysis
 ## Implementation of 'Show and Tell: Lessons Learned from the 2015 MSCOCO Image Captioning Challenge' paper by [Vinyals et al.](https://ieeexplore.ieee.org/abstract/document/7505636)
 ### This paper was published in IEEE TPAMI with 4000+ citations (including previous conference version).
+## Analysis with different combinations of CNN+RNN, data augmentation, pre-trained embeddings.
 
 
 **Note:** This is a work in progress. I will write a detailed blog post on medium.com explaining all the code and detailing the steps.
